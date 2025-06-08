@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this for the video player aspect ratio */
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+}
+.aspect-h-9 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
